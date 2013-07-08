@@ -1,34 +1,21 @@
 <@include path="include/header.html"/@>
 
-
-<!-- SIDE -->
-
-<div class="four columns" id="side">
-    <div class="side-content">
-        <nav>
-            <@menu type="user" showchildren="true" showparent="true"/@>
-        </nav>
-        <@modules id="sidebar" global="true"/@>
-	</div>
-</div>
-
-
-<!-- MAIN -->
-
-<div class="twelve columns" id="main">
-	<div id="content">
-		<@user field="personal"/@>
+<div class="row-fluid">
+	<article class="span8">
+        <@user field="personal"/@>
 		<@user field="item-lists"/@>
 		<@user field="billing"/@>
 		<@user field="subscriptions"/@>
 		<@user field="orders"/@>
-	<div class="cl"></div>
-	</div>
-
-
-<div class="cl"></div>
-</div>
-
-
+    </article>
+    
+    <aside class="span4 well">
+        <h3><@page field="name" /@></h3>
+        <hr>
+        <@menu type="user" showchildren="true" showparent="true" class="nav nav-pills nav-stacked"/@>
+        <hr>
+        <@modules id="SideContent" global="true" /@>
+    </aside>
+</div><!-- .row-fluid -->
 
 <@include path="include/footer.html"/@>

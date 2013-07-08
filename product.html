@@ -1,28 +1,30 @@
 <@include path="include/header.html"/@>
-<!-- SIDE -->
 
-<div class="four columns" id="side">
-  <div class="side-content">
-    <nav>
-      <@menu type="category"/@>
-    </nav>
-    <@modules id="sidebar" global="true"/@>
-  </div>
-</div>
-<!-- MAIN -->
-<div class="twelve columns" id="main">
-  <div id="content" class="bb-two-col bb-equal-cols">
-    <div class="bb-col">
-      <@product field="images"/@>
-    </div>
-    <div class="bb-col">
-      <@product field="defaults"/@>
-    </div>
-    <div class="cl"></div>
-    <@product field="reviews"/@>
-	<!-- done -->
-  </div>
-  <div class="cl"></div>
-</div>
+<div class="row-fluid">
+    <article class="span8">
+        <div class="row-fluid">
+            <div class="span6">
+                <@product field="images"/@>
+            </div>
+            <div class="span6">
+                <@product field="defaults"/@>
+            </div>
+        </div><!-- .row-fluid -->
+        
+        <div class="cl"></div>
+
+        <@product field="reviews"/@>
+        <hr>
+        <@modules id="BodyContent" default="true" /@>
+    </article>
+    
+    <aside class="span4 well">
+        <h3><@page field="name" /@></h3>
+        <hr>
+        <@menu type="category" class="nav nav-pills nav-stacked"/@>
+        <hr>
+        <@modules id="SideContent" global="true" /@>
+    </aside>
+</div><!-- .row-fluid -->
 
 <@include path="include/footer.html"/@>
