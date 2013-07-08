@@ -1,0 +1,26 @@
+<@include path="include/header.html"/@>
+
+
+    <!-- SIDE -->
+    <div class="four columns" id="side">
+        <div class="side-content">
+        <nav>
+            <@menu type="category"/@>
+        </nav>
+            <@modules id="sidebar" global="true"/@>
+        </div>
+    </div>
+
+
+    <!-- MAIN -->
+    <div class="twelve columns" id="main">
+        <div id="content">
+            <@category field="productlist"/@>
+        <div class="cl"></div>
+        </div>
+    
+    
+    <div class="cl"></div>
+	</div>
+
+<@include path="include/footer.html"/@>

@@ -1,0 +1,28 @@
+<@include path="include/header.html"/@>
+<!-- SIDE -->
+
+<div class="four columns" id="side">
+  <div class="side-content">
+    <nav>
+      <@menu type="category"/@>
+    </nav>
+    <@modules id="sidebar" global="true"/@>
+  </div>
+</div>
+<!-- MAIN -->
+<div class="twelve columns" id="main">
+  <div id="content" class="bb-two-col bb-equal-cols">
+    <div class="bb-col">
+      <@product field="images"/@>
+    </div>
+    <div class="bb-col">
+      <@product field="defaults"/@>
+    </div>
+    <div class="cl"></div>
+    <@product field="reviews"/@>
+	<!-- done -->
+  </div>
+  <div class="cl"></div>
+</div>
+
+<@include path="include/footer.html"/@>

@@ -1,0 +1,112 @@
+/*
+Global.css
+Global Styles
+Site: ########
+Media Specification: All
+Authors: Nate Cornelius & Terrance Unce | Hole in the Roof Marketing | holeintheroof.com
+
+Color Codes:
+#
+#
+#
+--------------------------
+*/
+
+
+/*-----------------
+  EMBEDED FONTS
+-----------------*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600);
+/*
+font-family: 'Open Sans', sans-serif;
+*/
+
+/*-----------------
+	 ELEMENTS
+-----------------*/
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+    background: #fff;
+}
+
+a { color: #08c; }
+a:visited { color: #39f; }
+a:hover { color: #444; }
+
+.container-fluid { width: 95%; max-width: 1000px; margin: 40px auto; }
+
+
+/*-----------------
+	  HEADER
+-----------------*/
+.logo img { vertical-align: bottom; }
+
+
+/*-----------------
+    NAVIGATION
+-----------------*/
+/* The following styles add dropdown support to 
+any of your menus nested within the .navbar class */
+.navbar .menu-level-0 li.has-children ul {
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    width: 30%;
+    padding: 5%;
+    z-index: 100;
+    opacity: 0;
+    -webkit-transition: .4s opacity linear;
+    -moz-transition: .4s opacity linear;
+    -o-transition: .4s opacity linear;
+    transition: .4s opacity linear;
+    margin-left: 0;
+}
+
+.navbar .menu-level-0 li.has-children:hover > ul {
+    visibility: visible; 
+    opacity: 1;
+}
+
+.navbar .menu-level-0 li > ul li { float: none; margin: 18px auto;}
+
+.navbar .menu-level-0 li > ul.menu-level-1 li a {
+    border: none;
+    font-size: 16px;
+	text-decoration: none;
+}
+
+.navbar .menu-level-0 li > ul.menu-level-1 li a:hover {
+	text-decoration: underline;
+}
+
+
+/*-----------------
+	  CONTENT
+-----------------*/
+
+
+/*---------------
+	SIDEBAR
+---------------*/
+
+
+/*-----------------
+	  FOOTER
+-----------------*/
+footer {
+	margin-bottom: 50px;
+	padding: 20px 0;
+}
+
+.copyright p { font-size: 0.8em; color: #777; text-align: center; }
+
+
+/*-----------------
+	   MISC
+-----------------*/
+.tweet small { display: block; }
+.flexslider { margin: 0 0 30px 0; background: transparent; box-shadow: none; border: 0 none; }
+.txtcolorone { color: #00a1f0 !important; }
+.txtcolortwo { color: #ff5e33 !important; }
+.txtcolorthree { color: #fff !important; }

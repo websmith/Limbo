@@ -1,0 +1,33 @@
+<@include path="include/header.html"/@>
+
+<div class="row-fluid">        
+    <article class="span8">
+        <h1>
+            <@page field="name"/@>
+        </h1>
+        <h3>Having trouble finding something?</h3>
+        <h4>Perhaps we can help...</h4>
+        <p>Use the search form below to search the entire site</p>
+        <@form type="search" searchtype="all" buttontext="Search"  /@>
+        <hr/>
+        <h5>Additional Help</h5>
+        <p>This site was developed to be user-friendly and accessability-minded. If you have any difficulty while trying to use this site, please keep in mind that this site was built using Web 2.0 techologies including HTML5 and CSS3. If this website appears to be functioning abnormally, it could because you are using an out-of-date or non-standards compliant browser.</p>
+        <p>If this is the case, please consider upgrading your browser to it's newest version, or installing a newer standards-compliant browser. We recommend the following browsers for the best possible web experience:</p>
+        <ul style="margin: 0 0 20px 20px;">
+            <li><a href="http://www.google.com/chrome" target="_blank">Google Chrome</a></li>
+            <li><a href="http://www.mozilla.org/en-US/firefox/new" target="_blank">Mozilla Firefox</a></li>
+            <li><a href="http://www.opera.com/" target="_blank">Opera</a></li>
+        </ul>
+        
+       <p>If your browser is up-to-date and you are still experiencing issues, please <a href="mailto:nate@holeintheroof.com">contact the webmaster</a></p>
+    </article>
+    
+    <aside class="span4 well">
+        <h3>Sitemap:</h3>
+        <@menu type="main" showchildren="true" hidehome="false" class="nav nav-pills nav-stacked"/@>
+    </aside>
+
+    <div class="cl"></div>
+</div><!-- .row-fluid -->
+
+<@include path="include/footer.html"/@>
