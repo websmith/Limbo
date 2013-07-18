@@ -110,3 +110,5 @@ footer {
 .txtcolorone { color: #00a1f0 !important; }
 .txtcolortwo { color: #ff5e33 !important; }
 .txtcolorthree { color: #fff !important; }
+
+.layout-article .article { border-bottom: 0 none; margin-bottom: 0; padding-bottom: 0; }
