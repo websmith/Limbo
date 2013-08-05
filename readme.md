@@ -2,7 +2,7 @@
 
 # Welcome to Limbo!
 
-Limbo is a minimalist theme for Convergence CMS, specifically enhanced for version 3. Limbo uses [Twitter Bootstrap](http://twitter.github.io/bootstrap/) for design and layout elements and should be a great boilerplate for any website relying on the bootstrap framework.
+Limbo is a minimalist theme for [Convergence CMS](http://convergencecms.co/), specifically enhanced for version 3. Limbo uses [Twitter Bootstrap](http://getbootstrap.com) for design and layout elements and should be a great boilerplate for any website relying on the bootstrap framework.
 
 #### Installation:
 
