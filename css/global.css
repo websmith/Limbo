@@ -80,6 +80,17 @@ any of your menus nested within the .navbar class */
 	text-decoration: underline;
 }
 
+.navbar-brand,
+.navbar-brand:visited,
+.navbar-brand:hover { 
+	display: none; 
+	font-size: 1.2em;
+	color: #fff;
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
 
 /*-----------------
 	  CONTENT
