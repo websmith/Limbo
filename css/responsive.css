@@ -16,7 +16,7 @@ Authors: Nate Cornelius & Terrance Unce | Hole in the Roof Marketing | holeinthe
 }
 
 @media only screen and (max-width: 767px) {
-	.navbar-brand { display: none; }
+	.navbar-brand { display: block; }
 }
 
 @media only screen and (max-width: 500px) {
