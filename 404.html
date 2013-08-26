@@ -1,7 +1,7 @@
 <@include path="include/header.html"/@>
 
-<div class="row-fluid">        
-    <article class="span8">
+<div class="row">        
+    <article class="col-sm-8">
         <h1>
             <@page field="name"/@>
         </h1>
@@ -22,9 +22,11 @@
        <p>If your browser is up-to-date and you are still experiencing issues, please <a href="mailto:nate@holeintheroof.com">contact the webmaster</a></p>
     </article>
     
-    <aside class="span4 well">
-        <h3>Sitemap:</h3>
-        <@menu type="main" showall="true" class="nav nav-stacked"/@>
+    <aside class="col-sm-4">
+    	<div class="well">
+            <h3>Sitemap:</h3>
+            <@menu type="main" showall="true" class="nav nav-stacked"/@>
+        </div>
     </aside>
 
     <div class="cl"></div>

@@ -1,12 +1,12 @@
 <@include path="include/header.html"/@>
 
-<div class="row-fluid">
-    <article class="span8">
-        <div class="row-fluid">
-            <div class="span6">
+<div class="row">
+    <article class="col-sm-8">
+        <div class="row">
+            <div class="col-sm-6">
                 <@product field="images"/@>
             </div>
-            <div class="span6">
+            <div class="col-sm-6">
                 <@product field="defaults"/@>
             </div>
         </div><!-- .row-fluid -->
@@ -18,12 +18,14 @@
         <@modules id="BodyContent" default="true" /@>
     </article>
     
-    <aside class="span4 well">
-        <h3><@page field="name" /@></h3>
-        <hr>
-        <@menu type="category" class="nav nav-pills nav-stacked"/@>
-        <hr>
-        <@modules id="SideContent" global="true" /@>
+    <aside class="col-sm-4">
+    	<div class="well">
+            <h3><@page field="name" /@></h3>
+            <hr>
+            <@menu type="category" class="nav nav-pills nav-stacked" showchildren="true"/@>
+            <hr>
+            <@modules id="SideContent" global="true" /@>
+        </div>
     </aside>
 </div><!-- .row-fluid -->
 

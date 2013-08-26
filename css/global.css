@@ -34,7 +34,7 @@ a { color: #08c; }
 a:visited { color: #39f; }
 a:hover { color: #444; }
 
-.container-fluid { width: 95%; max-width: 1000px; margin: 40px auto; }
+.container { width: 95%; max-width: 1000px; margin: 40px auto; }
 
 
 /*-----------------
@@ -48,7 +48,7 @@ a:hover { color: #444; }
 -----------------*/
 /* The following styles add dropdown support to 
 any of your menus nested within the .navbar class */
-.navbar .menu-level-0 li.has-children ul {
+/*.navbar .menu-level-0 li.has-children ul {
     visibility: hidden;
     position: absolute;
     background-color: white;
@@ -76,18 +76,16 @@ any of your menus nested within the .navbar class */
 	text-decoration: none;
 }
 
-.navbar .menu-level-0 li > ul.menu-level-1 li a:hover {
-	text-decoration: underline;
-}
-
+.navbar .menu-level-0 li > ul.menu-level-1 li a:hover { text-decoration: underline; }
+*/
 .navbar-brand,
 .navbar-brand:visited,
 .navbar-brand:hover { 
 	display: none; 
-	font-size: 1.2em;
-	color: #fff;
+	font-size: 2em;
+	color: #333;
 	text-align: left;
-	padding-top: 5px;
+	padding-top: 16px;
 	padding-left: 10px;
 }
 
