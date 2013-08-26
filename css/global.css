@@ -21,8 +21,9 @@ Color Codes:
 font-family: 'Open Sans', sans-serif;
 */
 
+
 /*-----------------
-	 ELEMENTS
+MAIN
 -----------------*/
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -38,46 +39,14 @@ a:hover { color: #444; }
 
 
 /*-----------------
-	  HEADER
+HEADER
 -----------------*/
 .logo img { vertical-align: bottom; }
 
 
 /*-----------------
-    NAVIGATION
+NAVIGATION
 -----------------*/
-/* The following styles add dropdown support to 
-any of your menus nested within the .navbar class */
-/*.navbar .menu-level-0 li.has-children ul {
-    visibility: hidden;
-    position: absolute;
-    background-color: white;
-    width: 30%;
-    padding: 5%;
-    z-index: 100;
-    opacity: 0;
-    -webkit-transition: .4s opacity linear;
-    -moz-transition: .4s opacity linear;
-    -o-transition: .4s opacity linear;
-    transition: .4s opacity linear;
-    margin-left: 0;
-}
-
-.navbar .menu-level-0 li.has-children:hover > ul {
-    visibility: visible; 
-    opacity: 1;
-}
-
-.navbar .menu-level-0 li > ul li { float: none; margin: 18px auto;}
-
-.navbar .menu-level-0 li > ul.menu-level-1 li a {
-    border: none;
-    font-size: 16px;
-	text-decoration: none;
-}
-
-.navbar .menu-level-0 li > ul.menu-level-1 li a:hover { text-decoration: underline; }
-*/
 .navbar-brand,
 .navbar-brand:visited,
 .navbar-brand:hover { 
@@ -91,17 +60,17 @@ any of your menus nested within the .navbar class */
 
 
 /*-----------------
-	  CONTENT
+CONTENT
 -----------------*/
 
 
 /*---------------
-	SIDEBAR
+SIDEBAR
 ---------------*/
 
 
 /*-----------------
-	  FOOTER
+FOOTER
 -----------------*/
 footer {
 	margin-bottom: 50px;
@@ -112,12 +81,8 @@ footer {
 
 
 /*-----------------
-	   MISC
+MISC
 -----------------*/
-.tweet small { display: block; }
-.flexslider { margin: 0 0 30px 0; background: transparent; box-shadow: none; border: 0 none; }
 .txtcolorone { color: #00a1f0 !important; }
 .txtcolortwo { color: #ff5e33 !important; }
 .txtcolorthree { color: #fff !important; }
-
-.layout-article .article { border-bottom: 0 none; margin-bottom: 0; padding-bottom: 0; }

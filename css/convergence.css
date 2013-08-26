@@ -1,4 +1,4 @@
-/* Convergence Fixes */
+/* CONVERGENCE FIXES */
 .c-bit-box input.number { width: 80px; height: 30px; }
 .c-bit-box .c-tag {
   float: none;
@@ -15,10 +15,12 @@
 
 .display-grid .display-item:nth-child(4n+4) { clear: left; }
 
-/* Pop-up Modals */
+/* POP-UP MODALS */
 #fancybox-wrap { padding: 0; margin: 20px; }
 
-/* Photos Module */
+/* PHOTOS MODULE */
+.flexslider { margin: 0 0 30px 0; background: transparent; box-shadow: none; border: 0 none; }
+
 .slideshow.displaystyle-module .slideshow-image {
 	width: 82px;
 	height: 102px;
@@ -142,7 +144,7 @@
 }
 
 
-/* Forms Module */
+/* FORMS MODULE */
 .form-module { margin-bottom: 20px; }
 .form-group { max-width: 640px; }
 .c-b textarea,
@@ -182,7 +184,7 @@
 }
 
 
-/* Blog */
+/* BLOG */
 .form-comments {
 	padding-top: 20px;
 	margin-top: 20px;
@@ -199,6 +201,7 @@
 .field.field-name.post-title { margin-bottom: 5px; }
 .comments { margin: 20px 0; }
 .breadcrumb { display: block; }
+.layout-article .article { border-bottom: 0 none; margin-bottom: 0; padding-bottom: 0; }
 
 
 /* TWITTER */
@@ -208,3 +211,6 @@
 }
 
 .tweet { margin-bottom: 20px; }
+.tweet small { display: block; }
+
+

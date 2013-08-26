@@ -9,9 +9,7 @@ $(document).ready(function() {
 	$('.nav li.has-children ul.child-menu').each(function() {
 		var copyThis = $(this).siblings('a');
 		copyThis.removeClass('active');
-		var copyClass = copyThis.attr('class');
-		console.log(copyClass);
-		
+		var copyClass = copyThis.attr('class');		
 		$(this).parent().addClass('dropdown');
 		$(this).addClass('dropdown-menu');
 		copyThis.clone().prependTo(this).wrap('<li class="'+copyClass+'"><li>');
