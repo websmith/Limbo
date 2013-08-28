@@ -34,7 +34,7 @@ $(document).ready(function() {
       e.preventDefault();
       $content.not(':animated').slideToggle();
       $('html,body').stop().animate({scrollTop: $content.siblings('.accordion-title').offset().top}, 400, function() { 
-        location.hash = href.replace('#',''); 
+        location.hash = $link.replace('#',''); 
       });
     });
   });
