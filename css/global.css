@@ -81,6 +81,18 @@ footer {
 
 
 /*-----------------
+ACCORDIONS
+-----------------*/
+.accordion-widget { margin: 20px 0 ; }
+.accordion-widget .accordion-title { padding: 5px 10px; background: rgba(186,186,186,.8); }
+.accordion-widget .accordion-title:hover { background: rgba(186,186,186, 1); }
+.accordion-widget .article-title a { text-decoration: none; color: #000; font-weight: 700; }
+.accordion-widget .article-title a:hover { text-decoration: none; color: #333; }
+.accordion-widget .accordion-body  { display:none; }
+.accordion-widget .accordion-body { padding: 30px; background: #dbdbdb; border: 1px solid #bababa; }
+
+
+/*-----------------
 MISC
 -----------------*/
 .txtcolorone { color: #00a1f0 !important; }
