@@ -15,6 +15,26 @@
 
 .display-grid .display-item:nth-child(4n+4) { clear: left; }
 
+.input-append .btn { padding: 4px 12px; }
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input { height: auto; }
+
 /* POP-UP MODALS */
 #fancybox-wrap { padding: 0; margin: 20px; }
 
@@ -212,5 +232,3 @@
 
 .tweet { margin-bottom: 20px; }
 .tweet small { display: block; }
-
-
