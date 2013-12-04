@@ -18,6 +18,8 @@ Authors: Nate Cornelius & Terrance Unce | Hole in the Roof Marketing | holeinthe
 @media only screen and (max-width: 767px) {
 	.navbar { margin-top: 20px; }
 	.navbar-brand { display: block; }
+	.navbar .nav { float: none; }
+	.navbar .nav > li { float: none; text-align: center; }
 }
 
 @media only screen and (max-width: 660px) {
