@@ -17,6 +17,24 @@ $(document).ready(function() {
 		/*Remove the following line to remove the arrows next to dropdown menus*/
 		$(this).siblings().append('<span class="caret"></span>');
 	});
+	//Add Level 3 Dropdowns to Nav
+	$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(e) {
+		e.preventDefault(); 
+		e.stopPropagation(); 
+		$('ul.dropdown-menu [data-toggle=dropdown]').parent().removeClass('open');
+		$(this).parent().addClass('open');
+	
+		var menu = $(this).parent().find("ul");
+		var menupos = $(menu).offset();
+	
+		if (menupos.left + menu.width() > $(window).width()) {
+			var newpos = -$(menu).width();
+			menu.css({ left: newpos });    
+		} else {
+			var newpos = $(this).parent().width();
+			menu.css({ left: newpos });
+		}
+	});
 });
 
 /* 
