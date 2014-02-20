@@ -83,13 +83,16 @@ footer {
 /*-----------------
 ACCORDIONS
 -----------------*/
-.accordion-widget { margin: 20px 0 ; }
-.accordion-widget .accordion-title { padding: 5px 10px; background: rgba(186,186,186,.8); }
-.accordion-widget .accordion-title:hover { background: rgba(186,186,186, 1); }
-.accordion-widget .article-title a { text-decoration: none; color: #000; font-weight: 700; }
+.expanded .article-title a  { background: url(../images/minus-icon.png) no-repeat 0px 0px;background-size:28px 28px; }
+.collapsed .article-title a { background: url(../images/plus-icon.png) no-repeat 0px 0px;background-size:28px 28px; }
+.accordion-widget { margin: 5px 0 ; }
+.accordion-widget .accordion-title {padding: 1px 0px; background: #ffffff; }
+.accordion-widget .accordion-title:hover { background: none; }
+.accordion-widget .article-title a { padding-left:40px; text-decoration: none; color: #a8a8a8; font-weight: 400; font-size:1.5em; display:block; }
+.expanded .article-title a  {color: #173869;}
 .accordion-widget .article-title a:hover { text-decoration: none; color: #333; }
 .accordion-widget .accordion-body  { display:none; }
-.accordion-widget .accordion-body { padding: 30px; background: #dbdbdb; border: 1px solid #bababa; }
+.accordion-widget .accordion-body { padding: 0px; background: #FFFFFF; border: none; color:#03a9e2; }
 
 
 /*-----------------

@@ -38,24 +38,30 @@ $(document).ready(function() {
 });
 
 /* 
-* Convergence Accordion Widget v1.0
-* Copyright 2013 Nate Cornelius - http://natecornelius.com | http://holeintheroof.com
+* Convergence Accordion Widget v1.1
+* Copyright 2013-2014 Nate Cornelius - http://natecornelius.com | http://holeintheroof.com
 */
 $(document).ready(function() {  
-  $('.accordion-widget').each(function(){
-    var $title = $(this).find('.accordion-title .article-title a');
-    var $content = $(this).find('.accordion-body');
-    var $link = $title.attr('href');
-    $title.attr('href','#'+$link);
-    
-    $title.click(function(e){
-      e.preventDefault();
-      $content.not(':animated').slideToggle();
-      $('html,body').stop().animate({scrollTop: $content.siblings('.accordion-title').offset().top}, 400, function() { 
-        location.hash = $link.replace('#',''); 
-      });
-    });
-  });
+	$('.accordion-widget').each(function(){
+		var $title = $(this).find('.accordion-title .article-title a');
+		var $content = $(this).find('.accordion-body');
+		var $link = $title.attr('href');
+		$title.attr('href','#'+$link);
+
+		$title.click(function(e){
+			e.preventDefault();
+			if ($(this).parents('.accordion-widget').hasClass('collapsed')){
+				$(this).parents('.accordion-widget').removeClass('collapsed').addClass('expanded');		  
+			}
+			else if ($(this).parents('.accordion-widget').hasClass('expanded')){
+				$(this).parents('.accordion-widget').removeClass('expanded').addClass('collapsed');		  
+			}
+			$content.not(':animated').slideToggle();
+			$('html,body').stop().animate({scrollTop: $content.siblings('.accordion-title').offset().top}, 400, function() { 
+				location.hash = $link.replace('#',''); 
+			});
+		});
+	});
 });
 
 /*!
