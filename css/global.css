@@ -58,6 +58,11 @@ NAVIGATION
 	padding-left: 10px;
 }
 
+.navbar-default { background: none transparent; border: 0 none; }
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus { background: none transparent; box-shadow: none; }
+
 
 /*-----------------
 CONTENT
