@@ -1,6 +1,5 @@
 /* Restyle Convergence Form Modules using Bootstrap */
 $(document).ready(function() {
-	$('.form-module, .form-comments').addClass('form-horizontal');
 	$('.form-horizontal .control-group, .form-comments .control-group').addClass('form-group');
 	$('.form-group select, .form-group textarea, .form-group input').addClass('form-control');
 	$('.comments, .field.field-tags').addClass('well');
