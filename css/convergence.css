@@ -13,8 +13,6 @@
     padding: 10px;
 }
 
-.display-grid .display-item:nth-child(4n+4) { clear: left; }
-
 .input-append .btn { padding: 4px 12px; }
 
 select,
