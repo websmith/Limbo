@@ -5,7 +5,7 @@ CUSTOM REPSONSIVE STYLES
 CSS3 Stylesheet
 Site: #########
 Media Specification: All
-Authors: Nate Cornelius & Terrance Unce | Hole in the Roof Marketing | holeintheroof.com
+Authors: Nate Cornelius | Hole in the Roof Marketing | holeintheroof.com
 
 ------------------------------------*/
 
@@ -16,13 +16,34 @@ Authors: Nate Cornelius & Terrance Unce | Hole in the Roof Marketing | holeinthe
 }
 
 @media only screen and (max-width: 767px) {
+	.navbar { margin-top: 20px; }
 	.navbar-brand { display: block; }
+	.navbar .nav { float: none; }
+	.navbar .nav > li { float: none; text-align: center; }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 660px) {
+.display-grid .display-item {
+    width: 45%;
+    float: left;
+    margin: 2.5%;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+.display-grid .display-item:nth-child(3n+3) { clear: left; }
+.display-grid .display-item:nth-child(4n+4) { clear: none; }
 }
 
 @media only screen and (max-width: 420px) {
+.display-grid .display-item {
+    width: 100%;
+    float: none;
+    margin: 0 0 20px 0;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
 }
 
 @media only screen and (max-width: 320px) {

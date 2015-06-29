@@ -1,17 +1,12 @@
 <@include path="include/header.html"/@>
 
-<div class="row-fluid">
-	<article class="span8">
+<div class="row">
+	<article class="col-sm-8">
+    	<@breadcrumb type="event" /@>
         <@modules id="BodyContent" default="true" /@>
     </article>
     
-    <aside class="span4 well">
-        <h3><@page field="name" /@></h3>
-        <hr>
-        <@menu type="main" class="nav nav-pills nav-stacked"/@>
-        <hr>
-        <@modules id="SideContent" global="true" /@>
-    </aside>
-</div><!-- .row-fluid -->
+    <@include path="include/sidebar.html"/@>
+</div>
 
 <@include path="include/footer.html"/@>

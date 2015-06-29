@@ -19,42 +19,46 @@
 <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
 <!-- Stylesheets -->
-<link href="css/global.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css" >
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" >
+<link rel="stylesheet" href="css/convergence.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/responsive.css">
 
 <!-- Scripts -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="js/selectivizr-min.js"></script>
 <script src="js/site.js"></script>
 <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
 <body class="page-<@pageurl/@> layout-<@page field="layout" /@>">
-<div class="container-fluid">
+<div class="container">
     <header>
-        <div class="row-fluid">
-            <div class="span3 logo">
-                <a href="./"><img src="images/logo.png" alt="Logo"></a>
-            </div><!-- .logo -->
-                        
-            <div class="navbar span9">
-                <nav class="navbar-inner">
-                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-
-                    <a class="navbar-brand" href="#">Menu</a>
-                    
-                    <div class="nav-collapse collapse">
-                        <@menu type="mainmenu" showchildren="true" class="nav nav-pills"/@>
-                    </div><!-- nav-collapse -->
+        <div class="row">
+            <div class="col-sm-3 logo">
+                <a href="./"><img src="images/logo.png" alt="Logo" class="img-responsive"></a>
+            </div>
+            
+            <div class="col-sm-9">           
+                <nav class="navbar navbar-default " role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                          <span class="sr-only">Toggle Navigation</span>
+                          <span class="glyphicon glyphicon-tasks"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Menu</a>
+                    </div>
+                
+                    <div class="navbar-collapse collapse navbar-ex1-collapse">
+                        <@menu type="main" showchildren="true" class="nav navbar-nav"/@>
+                    </div>
                     <div class="cl"></div>
                 </nav>
-            </div><!-- site-nav -->
+            </div>
             
             <div class="cl"></div>
-        </div><!-- .row-fluid -->
+        </div>
     </header>        
 	
     <hr>

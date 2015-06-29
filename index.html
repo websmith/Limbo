@@ -1,19 +1,19 @@
 <@include path="include/header.html"/@>
 
-<div class="row-fluid">
-    <article class="span12" id="slideshow">
+<div class="row">
+    <article class="col-sm-12" id="slideshow">
         <@module id="Slideshow"/@>
         <div class="cl"></div>
     </article>
-</div><!-- .row-fluid -->
+</div>
 
-<div class="row-fluid">
-    <article class="span8">
+<div class="row">
+    <article class="col-sm-8">
         <h1>Welcome to Limbo!</h1>
-        <p>Limbo is a minimalist theme for Convergence CMS, specifically enhanced for version 3. Limbo uses <a href="http://twitter.github.io/bootstrap/" target="_blank">Twitter Bootstrap</a> for design and layout elements and should be a great boilerplate for any website relying on the bootstrap framework.</p>
+        <p>Limbo is a minimalist theme for Convergence CMS, specifically enhanced for version 3. Limbo uses a custom version of <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap</a> for design and layout elements and should be a great boilerplate for any website relying on the bootstrap framework.</p>
         <h4>Installation:</h4>
         <p>To install this theme on your next Convergence project, copy the site files into your site directory. Once you have uploaded the new site files to your server, you should have a fresh boilerplate for your new website. Remember to also delete any existing CSS and HTML files in your directory as these could overwrite some of the styles in this theme. Existing HTML files in your Convergence files should be replaced with the themed versions in the Limbo installation folder.</p>
-        <div class="alert alert-block">
+        <div class="alert alert-warning">
         <h5>Warning</h5>
         <p>Please note that you should NOT delete the original "photos" folder in your Convergence directory as this will cause issues with your site.</p>
         </div>
@@ -22,13 +22,7 @@
         <@modules id="BodyContent"/@>
     </article>
     
-    <aside class="span4 well">
-        <h3>Sidebar</h3>
-        <hr>
-        <@menu type="main" class="nav nav-pills nav-stacked"/@>
-        <hr>
-        <@modules id="SideContent" default="true"/@>
-    </aside>
-</div><!-- .row-fluid -->
+    <@include path="include/sidebar.html"/@>
+</div>
 
 <@include path="include/footer.html"/@>

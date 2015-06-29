@@ -1,7 +1,7 @@
 <@include path="include/header.html"/@>
 
-<div class="row-fluid">
-	<article class="span8">
+<div class="row">
+	<article class="col-sm-8">
         <@user field="personal"/@>
 		<@user field="item-lists"/@>
 		<@user field="billing"/@>
@@ -9,15 +9,17 @@
 		<@user field="orders"/@>
     </article>
     
-    <aside class="span4 well">
-        <h3><@page field="name" /@></h3>
-        <hr>
-        <@menu type="user" showchildren="true" showparent="true" class="nav nav-pills nav-stacked"/@>
-        <hr>
-        <@user field="logout" /@>
-        <hr>
-        <@modules id="SideContent" global="true" /@>
+    <aside class="col-sm-4">
+    	<div class="well">
+            <h3><@page field="name" /@></h3>
+            <hr>
+            <@menu type="user" showchildren="true" showparent="true" class="nav nav-pills nav-stacked"/@>
+            <hr>
+            <@user field="logout" /@>
+            <hr>
+            <@modules id="SideContent" global="true" /@>
+        </div>
     </aside>
-</div><!-- .row-fluid -->
+</div>
 
 <@include path="include/footer.html"/@>

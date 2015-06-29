@@ -1,27 +1,21 @@
 <@include path="include/header.html"/@>
 
-<div class="row-fluid">
-    <article class="span8">
-        <div class="row-fluid">
-            <div class="span6">
+<div class="row">
+    <article class="col-sm-8">
+        <div class="row">
+            <div class="col-sm-6">
                 <@item field="image"/@>
             </div>
-            <div class="span6">
+            <div class="col-sm-6">
                 <h1><@item field="name"/@></h1>
                 <@item field="description"/@>
             </div>
-        </div><!-- .row-fluid -->
+        </div>
         <div class="cl"></div>
         <@modules id="BodyContent" default="true" /@>
     </article>
     
-    <aside class="span4 well">
-        <h3><@page field="name" /@></h3>
-        <hr>
-        <@menu type="main" class="nav nav-pills nav-stacked"/@>
-        <hr>
-        <@modules id="SideContent" global="true" /@>
-    </aside>
-</div><!-- .row-fluid -->
+    <@include path="include/sidebar.html"/@>
+</div>
 
 <@include path="include/footer.html"/@>
